@@ -1,0 +1,77 @@
+style.css
+* {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  background: linear-gradient(to right, #74ABE2, #5563DE);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+input {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  background-color: #fff;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-container input,
+.search-container .suggestions {
+  width: 300px;
+  padding: 10px;
+}
+
+.search-container input {
+  border: none;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.search-container .suggestions {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-top: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 200px;
+  overflow: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul.has-suggestions {
+  display: block;
+}
+
+ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+ul li:hover {
+  background-color: #f1f1f1;
+}
+
+input {
+  background-color: #fff;
+  color: #333;
+}
